@@ -6,6 +6,7 @@ const Login = () => {
   return (
     <>
       <h1>Welcome to the Bubble App!</h1>
+      <br/>
       <p>Build a login page here</p>
     </>
   );
