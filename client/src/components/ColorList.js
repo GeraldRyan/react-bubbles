@@ -29,7 +29,8 @@ const ColorList = ({ colors, updateColors }) =>
       .put(`/api/colors/${colorToEdit.id}`, colorToEdit)
       .then(res =>
       {
-        console.log("Response from color editing. Id=", colorToEdit.id)
+        console.log(`/api/colors/${colorToEdit.id}`)
+        console.log("Response from color editing",res, "Id=", colorToEdit.id)
         console.log("Color to edit", colorToEdit)
 
       })
