@@ -13,6 +13,7 @@ const BubblePage = () => {
     .get("/api/colors")
     .then(res=>{
       console.log("Response from bubblespage",res)
+      setColorList(res.data)
     })
   },[])
   // fetch your colors data from the server when the component mounts
