@@ -11,7 +11,8 @@ const Login = () =>
     axiosWithAuth()
     .post("/api/login", creds)
     .then(res=> {
-      console.log("response", res)
+      // console.log("response", res)
+      localStorage.setItem("token", res.data.payload)
     })
   }
   // when you have handled the token, navigate to the BubblePage route
