@@ -45,7 +45,7 @@ const ColorList = ({ colors, updateColors }) =>
       .delete(`/api/colors/${colorToEdit.id}`)
       .then(res =>
       {
-        console.log("response from delete request", res)
+        console.log("response from delete request", res, colors)
         
       })
   };
