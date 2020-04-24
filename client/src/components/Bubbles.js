@@ -10,7 +10,7 @@ const Bubbles = ({ colors }) => {
       key: `${i + 1}`
     }));
     setBubbleData(generateBubbleData);
-  }, [colors]);
+  }, [colors]); // if I could have a random variable here that changes, as well, and then rerendering would happen on its own. 
 
   return (
     <div className="bubble-wrap">
